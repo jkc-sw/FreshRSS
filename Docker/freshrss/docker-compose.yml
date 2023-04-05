@@ -31,3 +31,5 @@ services:
     #   start_interval: 11s
     #   interval: 75s
     #   retries: 3
+    ports:
+      - "${PUBLISHED_PORT:-8080}:${LISTEN:-80}"
