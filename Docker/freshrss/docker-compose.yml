@@ -7,11 +7,11 @@ volumes:
 services:
 
   freshrss:
-    image: freshrss/freshrss:latest
+    image: freshrss/freshrss:edge
     # Optional build section if you want to build the image locally:
     build:
       # Pick #latest (stable release) or #edge (rolling release) or a specific release like #1.21.0
-      context: https://github.com/FreshRSS/FreshRSS.git#latest
+      context: https://github.com/FreshRSS/FreshRSS.git#edge
       dockerfile: Docker/Dockerfile-Alpine
     container_name: freshrss
     hostname: freshrss
