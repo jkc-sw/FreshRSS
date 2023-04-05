@@ -25,3 +25,5 @@ services:
     environment:
       TZ: Europe/Paris
       CRON_MIN: '3,33'
+    ports:
+      - "${PUBLISHED_PORT:-8080}:${LISTEN:-80}"
